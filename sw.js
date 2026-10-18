@@ -1,5 +1,5 @@
 // Cache the app on first visit so it opens on the land without signal.
-const CACHE = 'cuerda-locator-v1';
+const CACHE = 'cuerda-locator-v2';
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(['./', './index.html'])).then(() => self.skipWaiting()));
 });
